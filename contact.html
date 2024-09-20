@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./my_media/favicon.ico">
+    <title>Contact Us</title>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav class="navClass">
+        <div class="mainDiv">
+            <div class="logo" id="myLogo"></div>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" id="homeH"></a>
+                <a href="about.html" id="about"></a>
+                <a href="#" id="cont"></a>
+            </div>
+            <div class="menu-icon" onclick="toggleNav()">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <br>
+    <h1 id="mycontactc"></h1>
+    <br>
+    <form id="myFormt" onsubmit="submissionOfForm(event)">
+        <label for="namesur" id="userFullName"></label>
+        <input type="text" id="namesur" name="namesur" placeholder="Name & Surname">
+        <br><span id="hid" class="error-msg"></span>
+        <br><br>
+
+        <label for="email" id="userEmail"></label>
+        <input type="email" id="email" name="email" placeholder="email@gmail.com">
+        <br><span id="hidEmail" class="error-msg"></span>
+        <br><br>
+
+        <label for="message" id="msg"></label>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message..."></textarea>
+        <br><span id="hidmsg" class="error-msg"></span>
+        <br><br>
+
+        <input type="submit" value="Submit">
+        <br><p id="submission_msg"></p>
+    </form>
+
+    <footer class="footerpage">
+        <div class="social-links">
+            <a href="unavailable.html"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100077079056091"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/hil.nti/"><i class="fa-brands fa-square-instagram"></i></a>
+        </div>
+        <p>&copy; 2024 Hilaire Ntibashima. All Rights Reserved.</p>
+    </footer>
+
+    <script src="contact.js"></script>
+</body>
+</html>
